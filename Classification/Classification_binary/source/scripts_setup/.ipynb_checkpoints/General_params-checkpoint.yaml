@@ -1,0 +1,14 @@
+# config.yaml
+All:
+  cv: 3                 # cross validation
+  random_state: 22      # random seed
+  n_jobs: -1            # paralelized jobs 
+Trials:
+  n_iter: 1             # BayesSearchCV, BayesianOptimization, RandomizedSearchCV
+  n_trials: 1           # Optuna trials 
+  init_points: 2        # BayesianOptimization
+SVC:
+  c_min: 1e-3
+  c_max: 1e+3
+  gamma_min: 1e-4
+  gamma_max: 1e+1
