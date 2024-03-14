@@ -6,15 +6,16 @@ General:
   n_iter: 2             # BayesSearchCV, BayesianOptimization, RandomizedSearchCV
   n_trials: 2           # Optuna trials 
   init_points: 2        # BayesianOptimization
-SVC:
-  c_min: 0.001
-  c_max: 1000.0
-  gamma_min: 0.0001
-  gamma_max: 10.0
+  testing: TRUE
 MLFlow:
   tracking_server_uri: "http://localhost:5000"
   experiment_name: "Magic"
   experiment_description:
   project_name: "Magic Project"
   team: "Local Py"
-  
+SVC:
+  c_min: 0.001
+  c_max: 1000.0
+  gamma_min: 0.0001
+  gamma_max: 10.0
+KNN:
