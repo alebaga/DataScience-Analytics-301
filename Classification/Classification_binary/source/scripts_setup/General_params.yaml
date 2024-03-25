@@ -9,7 +9,7 @@ General:
   testing: TRUE
 MLFlow:
   tracking_server_uri: "http://localhost:5000"
-  experiment_name: "Magic"
+  experiment_name: "Magic 02"
   experiment_description:
   project_name: "Magic Project"
   team: "Local Py"
@@ -19,3 +19,7 @@ SVC:
   gamma_min: 0.0001
   gamma_max: 10.0
 KNN:
+  n_neighbors_min: 3 
+  n_neighbors_max: 30
+  leaf_size_min: 10
+  leaf_size_max: 100
