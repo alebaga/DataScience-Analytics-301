@@ -109,3 +109,11 @@ def log_metrics_auc_intervals(fpr, tpr):
     except Exception as e:
         print(f"Error in log_metrics_auc_intervals: {e}")
         return None, None
+
+def mlf_log_tables(X_train, y_train, X_test, y_test):
+    # Log an input datasets used for training & testing
+    t_data = mlflow.data.from_numpy(X_train, targets=y_train) 
+    mlflow.log_input(t_data, context="training")
+
+    t_data = mlflow.data.from_numpy(X_test, targets=y_test) 
+    mlflow.log_input(t_data, context="test")
